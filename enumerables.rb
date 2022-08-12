@@ -41,8 +41,11 @@ end
 # for the spicy food whose cuisine matches the cuisine being passed to the method
 def get_spicy_food_by_cuisine(spicy_foods, cuisine)
   # your code here
-  return spicy_foods.select{|f| f[:cuisine] == cuisine}
-#  return selected
+  selected = spicy_foods.each{|f| puts 
+  if f[:cuisine] == cuisine
+  return f
+end
+}
 end
 get_spicy_food_by_cuisine(spicy_foods, "American")
 
